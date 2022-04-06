@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Simplicity</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header>
+    <div class="conteudo limitador">
+        <h1><a href="index.html"> Simplicity</a></h1>
+        <nav>
+         <!-- O Comportamento desse link será feito via JavaScript -->
+            <h2><a href="">Menu &equiv;</a></h2>
+
+            <ul class="links-menu">    
+             <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+             <li><a href="contato.html">Contato</a></li>
+        </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <article class="limitador"> 
+
+        <h2>Contato</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolorum, maxime et consequatur architecto perspiciatis impedit ullam. Facilis sapiente magni accusantium consectetur qui omnis, consequatur autem iusto sunt tenetur id!</p>
+        
+        <p>Incidunt illum, voluptatem reprehenderit quibusdam minus temporibus rem fugiat odit earum ipsum ratione excepturi quasi fugit suscipit libero, recusandae repellat culpa. Aspernatur natus omnis ad aperiam magnam suscipit, praesentium quasi.</p>
+        
+        <form action="" method="post">
+        <div>  
+            <label for="nome"> Nome:</label> <!-- For tem que ser direcionado ao atributo ID nesse exemplo nome -->
+            <input type="text" name="nome" id="nome" required></imput>
+        </div>
+        <div>
+            <label for="email"> E-mail:</label> 
+            <input type="email" name="email" id="email" required></imput>
+            <!-- Required torna obrigatório o campo de ser preenchido -->
+        </div>
+
+        <div>
+            <label for="data"> Data de Nascimento</label> 
+            <input type="date" name="data" id="data" ></imput>
+        </div>
+
+        <div>
+            <label for="telefone"> Telefone</label> 
+            <input type="tel" name="telefone" id="telefone" ></imput>
+        </div>
+
+        <div>
+            <label for="idade"> Telefone</label> 
+            <input type="number" name="idade" id="idade" min="18" max="100"></imput>
+        </div>
+
+        <div>
+            <p> Sexo:</p>
+            <input type="radio" name="sexo" id="masculino">
+            <label for="masculino"> Masculino</label>
+            <input type="radio" name="sexo" id="feminino">
+            <label for="feminino"> Feminino</label>
+        </div>
+
+        <div>
+            <p>Interesses</p>
+            <input type="checkbox" name="interesses" id="design">
+            <label for="design"> Design</label>
+            
+            <input type="checkbox" name="interesses" id="marketing">
+            <label for="marketing"> Marketing</label>
+            
+            <input type="checkbox" name="intereses" id="programacao">
+            <label for="programacao"> Programacao</label>
+        </div>
+
+        <div>
+
+        <label for="assunto">Assunto</label>
+        <select name="" id="">
+        <option></option> <!-- Deixe vazio de proposito -->
+        <option>Dúvidas</option>
+        <option>Elogios</option>
+        <option>Reclamações</option>
+        <option>Outros</option>
+        </select>
+
+        </div>
+
+        <div>
+            <label for="mensagem">Mensagem:</label> <br>
+            <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea>
+        </div>
+        <button type="submit">Enviar Dados</button>
+        </form>
+
+    </article>
+
+</main>
+    
+<footer>
+    <p>Simplicity é um site fictício desenvolvido educacionalmente
+        <br>Senac Penha - 2022 </p>
+
+</footer>
+</body>
+</html>
