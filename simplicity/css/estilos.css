@@ -46,12 +46,15 @@ h1 a {
 header { 
     background-color: white;
     text-transform: uppercase;
-    position: sticky;
-    top: 0;
     
    
-    /* Deixar o cabeçalho fixo */}
-
+    /* Deixar o cabeçalho fixo */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+    /* Ajuste de profundidade (Eixo Z)
+    Quanto maior,mais à frente fica */
 
     /* Regra para um elemento (no caso uma div) com a classe limitador E dentro do header
       Importante: o flex configurado aqui funcionará SOMENTE para a classe limitador aplicada na div dentro do header.
@@ -104,14 +107,11 @@ nav h2 a:focus,
     color: black;
     font-weight: bold;
     display: flex;
-    
-    
     height: 50px;
-   
-
     /* Não é possível usar essas propiedades sem o flex */
     justify-content: center;
     align-items: center;
+    background-color: whitesmoke;
 }
 
 /* Esta regra somente irá funcionar quando as duas classes estiverem juntas. 
