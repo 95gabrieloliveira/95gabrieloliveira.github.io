@@ -314,7 +314,7 @@ th {
      textarea {height: auto;}
 
      button {
-         background-color: white;
+         background-color: gainsboro;
          color: black;
          border:grey;
          padding: 1rem;
